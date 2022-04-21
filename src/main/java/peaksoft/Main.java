@@ -1,7 +1,26 @@
 package peaksoft;
 
+import peaksoft.model.User;
+import peaksoft.service.UserService;
+import peaksoft.service.UserServiceImpl;
+
+import java.sql.SQLException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         // реализуйте алгоритм здесь
+
+//        User user = new User("Dinara", "Rahatbek kyzy", (byte)18);
+//        User user1 = new User("Ulan", "Kubanychbekov", (byte)26);
+//        User user2 = new User("Kunzada", "Bekzhanova", (byte)19);
+        UserService userService = new UserServiceImpl();
+////        userService.createUsersTable();
+//        userService.saveUser(user.getName(), user.getLastName(), user.getAge());
+//        userService.saveUser(user1.getName(), user1.getLastName(), user1.getAge());
+//        userService.saveUser(user2.getName(), user2.getLastName(), user2.getAge());
+
+//        userService.cleanUsersTable();
+//        System.out.println(userService.existsByFirstName("Dinara"));
+//        userService.removeUserById(4);
     }
 }
